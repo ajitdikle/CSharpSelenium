@@ -10,7 +10,7 @@ namespace CSharpDec27
 {
     public  class ParaBank
     {
-        static void Main(String[] args)
+        static void Main1(String[] args)
         {
 
             IWebDriver driver = new ChromeDriver();

@@ -10,7 +10,7 @@ namespace SeleniumDec27
 {
     public  class SalesForce
     {
-        static void Main(String[] args)
+        static void Main2(String[] args)
         {
             IWebDriver driver = new ChromeDriver();
             driver.Url = "https://www.salesforce.com/in/form/signup/freetrial-sales/";
