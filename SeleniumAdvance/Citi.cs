@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium.Support.Extensions;
 
 namespace SeleniumAdvance
 {
@@ -65,13 +66,15 @@ namespace SeleniumAdvance
 
             driver.FindElement(By.Name("DOB")).Click();
 
-            driver.FindElement(By.XPath("(//select[@data-event='change'])[1]")).Click();
+            // driver.FindElement(By.XPath("(//select[@data-event='change'])[1]")).Click();
 
-            driver.FindElement(By.XPath("//option[text()='Apr']")).Click();
+            // driver.FindElement(By.XPath("//option[text()='Apr']")).Click();
 
-            driver.FindElement(By.XPath("//a[text()='14']")).Click();
+            //driver.FindElement(By.XPath("//a[text()='14']")).Click();
+            driver.ExecuteJavaScript("document.querySelector('#bill-date-long').value='14/04/2022");
 
             driver.FindElement(By.XPath("//input[@value='PROCEED']")).Click();
+            //driver.FindElement(By.XPath("//li[contains(text(),'accept Terms')]")).Text;
 
 
 
